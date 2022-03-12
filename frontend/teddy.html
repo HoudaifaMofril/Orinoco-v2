@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/styles-teddy.css" rel="stylesheet" type="text/css">
+    <script src="teddy.js" type="text/javascript"></script>
     <title>Teddy - Orinoco</title>
 </head>
 <body>
+<header>
+    <a href="index.html">Acceuil</a>
+    <a href="panier.html">Panier</a>
+</header>
+
+<main id="main">
+
+        <div id="ours__block" >
+            <h1 id="ours__nom">Grafunkel</h1>
+
+            <div>
+                <div>
+                    <img id="ours__image" src="../backend/JWDP5/images/teddy_2.jpg" alr="teddy" >
+                </div>
+                <div>
+                    <p id="ours__prix">50€</p>
+                    <label for="color__select">--Choisisez une couleur--</label>
+                    <br/>
+                    <select name="teddy" id="color__select" >
+                        <option id="color__option"  value=""></option>
+    
+                    </select>
+                    <input id="quantity" type="number" value="1" min= "1" max="50">
+                    <p id="total__prix">Total:</p>
+                    <div id="bouton__ajout__panier">
+                        <a id="link__ajout__panier" href="">Ajouter au panier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</main>
 
 </body>
 </html>

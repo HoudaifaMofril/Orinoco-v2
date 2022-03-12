@@ -3,6 +3,7 @@
     const teddy = await getTeddy(teddyId)
     hydrateTeddy(teddy)
     calculPrixPanier(teddy)
+    ajoutLocalStorage(teddy)
 })()
 
 function getTeddyId(){
@@ -42,7 +43,6 @@ function hydrateTeddy(teddy){
 function calculPrixPanier(teddy){
 
     const priceTeddy = teddy.price;
-    console.log(priceTeddy)
 
 
     const quantityTeddy = document.getElementById("quantity");
@@ -53,6 +53,18 @@ function calculPrixPanier(teddy){
     })
 }
 
-function ajoutLocalStorage() {
+function ajoutLocalStorage(teddy) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    console.log(cart)
+    const buttonCart = document.getElementById("link__ajout__panier");
+    
+    buttonCart.addEventListener("click", (event)=>{
+    
+        let cartObject = {Name: `${teddy.name}`, Price: `${teddy.price}`};
+
+        cart.push(cartObject);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+    })
 
 };

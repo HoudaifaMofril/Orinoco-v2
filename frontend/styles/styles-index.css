@@ -2,7 +2,13 @@
     font-family: "Apple Chancery";
 
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
 header{
     font-size: 1.8rem;
     display: flex;

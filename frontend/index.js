@@ -28,7 +28,7 @@ function displayTeddies() {
     cloneElt.getElementById("ours__image").src = teddy.imageUrl
     cloneElt.getElementById("ours__prix").textContent = teddy.price/100 + "€"
     cloneElt.getElementById("ours__link").textContent = " Voir " + teddy.name
-    cloneElt.getElementById("ours__link").href = `id=${teddy._id}`
+    cloneElt.getElementById("ours__link").href += `?id=${teddy._id}`
 
     document.getElementById("main").appendChild(cloneElt)
 
