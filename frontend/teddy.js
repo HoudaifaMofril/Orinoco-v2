@@ -30,8 +30,12 @@ function hydrateTeddy(teddy){
     const teddyColors = teddy.colors;
 
     teddyColors.forEach(color =>{
+        
         document.getElementById("color__select").innerHTML += `<option value=${color} >${color}</option>`
+        
     });
+    
+    
 
 
     document.getElementById("ours__nom").textContent = teddy.name
@@ -51,20 +55,35 @@ function calculPrixPanier(teddy){
     quantityTeddy.addEventListener("change", (event)=> {
         totalPrice.textContent = `Total: ` + (priceTeddy * `${event.target.value}`)/100 + "€";
     })
+
 }
 
 function ajoutLocalStorage(teddy) {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    console.log(cart)
     const buttonCart = document.getElementById("link__ajout__panier");
+    const quantityTeddy = document.getElementById("quantity");
+    const colorTeddyStorage = document.getElementById("color__select");
+    
+    
     
     buttonCart.addEventListener("click", (event)=>{
+        console.log(teddy)
     
-        let cartObject = {Name: `${teddy.name}`, Price: `${teddy.price}`};
+        let cartObject = {
+            ID: `${teddy._id}`,
+            Name: `${teddy.name}`, 
+            Quantity: `${quantityTeddy.value}`,
+            Color: `${colorTeddyStorage.value}`,
+            Image: `${teddy.imageUrl}`
+        };
+        console.log(colorTeddyStorage.value);
 
         cart.push(cartObject);
 
         localStorage.setItem("cart", JSON.stringify(cart));
+        
+        
     })
+    console.log(cart)
 
 };
