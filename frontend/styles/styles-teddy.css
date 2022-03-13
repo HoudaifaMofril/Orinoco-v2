@@ -70,3 +70,7 @@ header{
     border-radius: 29px;
     width: 70%;
 }
+#bouton__ajout__panier:hover{
+    opacity: 0.8
+}
+
