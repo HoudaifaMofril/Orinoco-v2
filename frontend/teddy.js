@@ -46,7 +46,7 @@ function calculPrixPanier(teddy){
     const quantityTeddy = document.getElementById("quantity");
     const totalPrice = document.getElementById("total__prix");
     quantityTeddy.addEventListener("change", (event)=> {
-        totalPrice.textContent = `Total: ` + (priceTeddy * `${event.target.value}`)/100 + "€";
+    totalPrice.textContent = `Total: ` + (priceTeddy * `${event.target.value}`)/100 + "€";
     })
 };
 

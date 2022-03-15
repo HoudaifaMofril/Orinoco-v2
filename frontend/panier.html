@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles/styles-panier.css" rel="stylesheet" type="text/css">
+    
+    <title>Orinoco</title>
+</head>
+<body>
+
+<header>
+  <a href="index.html">Acceuil</a>
+  <a href="panier.html">Panier</a>
+</header>
+<h1>Orinoco</h1>
+
+
+
+<main id="main">
+    <h2>Votre panier</h2>
+
+    <div id="productTemplateDiv">
+        <template id="productTemplate">
+
+            <div id="teddy__form__cart">
+                <img id="teddy__image"/>
+                <div>
+                    <p id="teddy__name">Nom</p>
+                    <p id="teddy__color">Couleur</p>
+                    <p id="teddy__quantity">Quantité</p>
+                    <button id="delete__order__button">Retirer du panier</button>
+                </div>
+            </div>
+            <p id="total__price__product">Total : </p>
+    
+        </template>
+    </div>
+    <p id="total__price__order">Total du panier: </p>
+
+
+    <form class="form-example">
+        <div class="form-example">
+          <label for="lastname">Nom:* </label>
+          <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <div class="form-example">
+          <label for="firstname">Prénom:* </label>
+          <input type="text" name="firstname" id="firstname" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Email:* </label>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+            <label for="address">Adresse:* </label>
+            <input type="text" name="address" id="address" required>
+        </div>
+        <div class="form-example">
+            <label for="city">Ville:* </label>
+            <input type="text" name="city" id="city" required>
+        </div>
+          
+      </form>
+      <button id="form__contact__order__submit">Valider ma commande</button>
+      
+
+    
+
+
+</main>
+
+
+<script src="panier.js" type="text/javascript"></script>
+</body>
+</html>

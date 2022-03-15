@@ -1,0 +1,96 @@
+*{
+    font-family: "Apple Chancery";
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color: inherit;
+}
+header{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2{
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    header{
+        font-size: 1.3rem;
+
+    }
+    img{
+        width: 50%;
+        height: 20vh;
+        padding: 10px;
+
+
+        border-radius: 18px;
+    }
+    #teddy__form__cart{
+        border: 1px solid rgb(138, 136, 136);
+        display: flex;
+        text-align: center;
+        
+    }
+    #total__price__product{
+        border: 1px solid black;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    #delete__order__button{
+        font-size: 0.8rem;
+        font-weight: 800;
+        border: 1px solid rgb(230, 42, 42);
+        border-radius: 10px;
+        color: aliceblue;
+        background: rgb(230, 42, 42);
+        padding: 5px;
+        cursor: pointer;
+    }
+    #total__price__order{
+        border: 1px solid black;
+        text-align: center;
+        font-weight: 800;
+        font-size: 1.1rem;
+    }
+    #form__contact{
+        border: 1px solid black;
+
+    }
+    form.form-example {
+        display: table;
+    }
+    
+    div.form-example {
+        display: table-row;
+    }
+    
+    label, input {
+        display: table;
+        margin-bottom: 10px;
+    }
+    #form__contact__order__submit{
+        margin: auto;
+        width: 70%;
+        border: 1px solid green;
+        padding: 7px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        background: rgb(74, 173, 74);
+        font-weight: 800;
+    }
+    
+  
+
+}
