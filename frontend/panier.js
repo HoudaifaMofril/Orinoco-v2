@@ -95,8 +95,6 @@ function getDataFromLocalStorage(){
                     contact,
                     products
                 };
-                
-               
     
                 const myInit = {
                     method: "POST",
