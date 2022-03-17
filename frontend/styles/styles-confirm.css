@@ -10,10 +10,10 @@ a:visited{
     color: inherit;
 }
 header{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 h1{
     text-align: center;

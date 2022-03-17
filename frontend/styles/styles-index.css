@@ -2,6 +2,13 @@
     font-family: "Apple Chancery";
 
 }
+#main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -9,68 +16,38 @@ a{
 a:visited{
     color: inherit;
 }
-header{
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
 h1{
     text-align: center;
-    font-size: 2.5rem;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+#ours__block{
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    transition: ease 350ms;
 
-@media only screen and (max-width: 400px) {
-    header{
-        font-size: 1.3rem;
+}
+#ours__block:hover{
+    transform: scale(0.8);
 
-    }
-    #ours__nom{
-        font-size: 25px;
-        margin:0;
-        padding: 15px 5px;
-    }
-    img{
-        width: 80%;
+}
+#ours__nom{
+    font-size: 1.2rem;
+}
+#ours__image{
+    max-width: 80%;
+    max-height: 30vh;
+    height: 25vh;
+    border-radius: 10px;
 
-        border-radius: 18px;
-    }
-    #ours__prix{
-        margin: 0;
-        padding: 5px 5px;
-    }
-    #ours__block{
-        width: 80%;
-        height: 50%;
-        margin: auto;
-        margin-bottom: 20px;
-        text-align: center;
-        border: 1px solid #6b6b6b;
-        border-radius: 36px;
-        transition: 600ms;
-
-    }
-    #ours__block:hover{
-        transform: scale(1.1);
-    }
-    #ours__link__button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        width: 75%;
-        height: 40px;
-        border: 1px solid black;
-        background-color: #b4fcb1;
-        border-radius: 29px;
-        margin-bottom: 10px;
-        transition: 400ms;
-    }
-    #ours__link__button:hover{
-        opacity: 0.8;
-    }
-    #ours__link__button p{
-        font-size: 1rem;
-    }
-
+}
+#ours__prix{
+    font-weight: 800;
+    font-size: 1.1rem;
 }

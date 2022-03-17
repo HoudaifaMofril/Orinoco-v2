@@ -10,10 +10,10 @@ a:visited{
     color: inherit;
 }
 header{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 h1{
     text-align: center;
@@ -22,6 +22,113 @@ h1{
 h2{
     text-align: center;
 }
+img{
+    width: 50%;
+    height: 35vh;
+    padding: 10px;
+    border-radius: 18px;
+}
+#teddy__form__cart{
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+    border: 1px solid rgb(138, 136, 136);
+    display: flex;
+
+    text-align: center;
+}
+#total__price__product{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 0.9rem;
+}
+#delete__order__button{
+    font-size: 0.8rem;
+    font-weight: 800;
+    border: 1px solid rgb(230, 42, 42);
+    border-radius: 10px;
+    color: aliceblue;
+    background: rgb(230, 42, 42);
+    padding: 5px;
+    cursor: pointer;
+}
+#teddy__infos{
+    width: 40%;
+    font-size: 1.5rem;
+
+}
+#delete__order__button{
+    font-size: 1.1rem;
+}
+#delete__order__button:hover{
+    opacity: 0.8;
+}
+#total__price__product{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+#total__price__order{
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+#form__contact{
+    border: 1px dashed black;
+    padding: 10px 10px;
+    margin: auto;
+    width: 30%;
+    margin-top: 100px;
+
+}
+form.form-example {
+    display: table;
+
+}
+
+div.form-example {
+    display: table-row;
+    
+}
+label{
+    text-align: center;
+}
+
+label, input {
+    display: table;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+input{
+    
+    border: 2px solid rgb(134, 134, 134);
+
+}
+#form__contact__order__submit{
+
+   margin: auto;
+   width: 15%;
+   padding: 8px;
+   text-align: center;
+   color: white;
+   background: rgb(74, 173, 74);
+   border-radius: 10px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+#form__contact__order__submit:hover{
+    opacity: 0.8;
+ }
 
 @media only screen and (max-width: 400px) {
     header{
@@ -32,8 +139,6 @@ h2{
         width: 50%;
         height: 20vh;
         padding: 10px;
-
-
         border-radius: 18px;
     }
     #teddy__form__cart{
